@@ -26,7 +26,7 @@ const Onepg = () => {
             className="onepg-bg min-h-screen flex flex-col text-white p-6 bg-cover bg-center bg-no-repeat relative"
         >
             {/* Overlay */}
-            <div className="absolute inset-0 bg-black/40"></div>
+            <div className="absolute inset-0 bg-black/40 pointer-events-none"></div>
 
             {/* Main content */}
             <div className="relative z-10 flex-1">
