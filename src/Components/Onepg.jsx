@@ -140,63 +140,63 @@ const Onepg = () => {
   </h2>
 
   <div className="max-w-3xl font-plex mx-auto space-y-2">
-    <details className="bg-white/10 rounded p-4 cursor-pointer hover:bg-white/20">
+    <details className="bg-white/10 rounded p-4 cursor-pointer hover:bg-white/20 p-4">
       <summary className="font-bold">What is the YouTube Video Summarizer?</summary>
       <p className="mt-2 text-sm">
         The YouTube Video Summarizer converts long YouTube videos into concise summaries, saving you time while capturing key points.
       </p>
     </details>
 
-    <details className="bg-white/10 rounded p-4 cursor-pointer hover:bg-white/20">
+    <details className="bg-white/10 rounded p-4 cursor-pointer hover:bg-white/20 p-4">
       <summary className="font-bold">Can I summarize multiple YouTube videos at once?</summary>
       <p className="mt-2 text-sm">
         Currently, the Summarizer works on one video at a time. Future updates may include batch summarization.
       </p>
     </details>
 
-    <details className="bg-white/10 rounded p-4 cursor-pointer hover:bg-white/20">
+    <details className="bg-white/10 rounded p-4 cursor-pointer hover:bg-white/20 p-4">
       <summary className="font-bold">Is there a limit on video length or number of summaries?</summary>
       <p className="mt-2 text-sm">
         There are no strict limits, but extremely long videos may take longer to summarize. Batch summarization is limited to 20 videos at a time.
       </p>
     </details>
 
-    <details className="bg-white/10 rounded p-4 cursor-pointer hover:bg-white/20">
+    <details className="bg-white/10 rounded p-4 cursor-pointer hover:bg-white/20 p-4">
       <summary className="font-bold">Can I customize the summary length or prompt?</summary>
       <p className="mt-2 text-sm">
         Yes! You can adjust the summary length or provide custom prompts to get summaries tailored to your needs.
       </p>
     </details>
 
-    <details className="bg-white/10 rounded p-4 cursor-pointer hover:bg-white/20">
+    <details className="bg-white/10 rounded p-4 cursor-pointer hover:bg-white/20 p-4">
       <summary className="font-bold">How accurate are the summaries?</summary>
       <p className="mt-2 text-sm">
         Summaries are context-aware and concise, though accuracy depends on video clarity and complexity.
       </p>
     </details>
 
-    <details className="bg-white/10 rounded p-4 cursor-pointer hover:bg-white/20">
+    <details className="bg-white/10 rounded p-4 cursor-pointer hover:bg-white/20 p-4">
       <summary className="font-bold">Is my data secure when using Summarizer?</summary>
       <p className="mt-2 text-sm">
         Yes. Your data is handled securely, and videos are only processed for summarization.
       </p>
     </details>
 
-    <details className="bg-white/10 rounded p-4 cursor-pointer hover:bg-white/20">
+    <details className="bg-white/10 rounded p-4 cursor-pointer hover:bg-white/20 p-4">
       <summary className="font-bold">Can I use this to summarize other content?</summary>
       <p className="mt-2 text-sm">
         Currently, Summarizer is optimized for YouTube videos, but support for other content types may be added in the future.
       </p>
     </details>
 
-    <details className="bg-white/10 rounded p-4 cursor-pointer hover:bg-white/20">
+    <details className="bg-white/10 rounded p-4 cursor-pointer hover:bg-white/20 p-4">
       <summary className="font-bold">What kinds of videos can I summarize?</summary>
       <p className="mt-2 text-sm">
         Educational videos, lectures, tutorials, webinars, interviews, podcasts—any video with spoken content.
       </p>
     </details>
 
-    <details className="bg-white/10 rounded p-4 cursor-pointer hover:bg-white/20">
+    <details className="bg-white/10 rounded p-4 cursor-pointer hover:bg-white/20 p-4">
       <summary className="font-bold">Will there be support for other languages?</summary>
       <p className="mt-2 text-sm">
         Currently, Summarizer supports over 40 languages. More languages may be added in future updates.
