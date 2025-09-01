@@ -133,68 +133,75 @@ const Onepg = () => {
                 </div>
             </section>
 
-            {/* FAQ Section */}
- <section className="mt-12 p-6 bg-black/30 rounded text-white">
+           {/* FAQ Section */}
+<section className="mt-12 p-6 bg-black/30 rounded text-white">
   <h2 className="text-xl font-comforta font-bold mb-6 text-center">
     Frequently Asked Questions
   </h2>
 
   <div className="max-w-3xl font-plex mx-auto space-y-2">
-    {[
-      {
-        q: "What is the YouTube Video Summarizer?",
-        a: "The YouTube Video Summarizer converts long YouTube videos into concise summaries, saving you time while capturing key points.",
-      },
-      {
-        q: "Can I summarize multiple YouTube videos at once?",
-        a: "Currently, the Summarizer works on one video at a time. Future updates may include batch summarization.",
-      },
-      {
-        q: "Is there a limit on video length or number of summaries?",
-        a: "There are no strict limits, but extremely long videos may take longer to summarize. Batch summarization is limited to 20 videos at a time.",
-      },
-      {
-        q: "Can I customize the summary length or prompt?",
-        a: "Yes! You can adjust the summary length or provide custom prompts to get summaries tailored to your needs.",
-      },
-      {
-        q: "How accurate are the summaries?",
-        a: "Summaries are context-aware and concise, though accuracy depends on video clarity and complexity.",
-      },
-      {
-        q: "Is my data secure when using Summarizer?",
-        a: "Yes. Your data is handled securely, and videos are only processed for summarization.",
-      },
-      {
-        q: "Can I use this to summarize other content?",
-        a: "Currently, Summarizer is optimized for YouTube videos, but support for other content types may be added in the future.",
-      },
-      {
-        q: "What kinds of videos can I summarize?",
-        a: "Educational videos, lectures, tutorials, webinars, interviews, podcasts—any video with spoken content.",
-      },
-      {
-        q: "Will there be support for other languages?",
-        a: "Currently, Summarizer supports over 40 languages. More languages may be added in future updates.",
-      },
-    ].map((faq, index) => (
-      <div
-        key={index}
-        className="bg-white/10 rounded cursor-pointer hover:bg-white/20 transition"
-      >
-        <div
-          className="flex justify-between items-center p-4"
-          onClick={() => setOpenFAQ(openFAQ === index ? null : index)}
-        >
-          <h3 className="font-bold">{faq.q}</h3>
-          <span>{openFAQ === index ? "▲" : "▼"}</span>
-        </div>
-        {/* Simple show/hide */}
-        <div className={openFAQ === index ? "block p-4 pt-0 text-sm" : "hidden"}>
-          {faq.a}
-        </div>
-      </div>
-    ))}
+    <details className="bg-white/10 rounded p-4 cursor-pointer hover:bg-white/20">
+      <summary className="font-bold">What is the YouTube Video Summarizer?</summary>
+      <p className="mt-2 text-sm">
+        The YouTube Video Summarizer converts long YouTube videos into concise summaries, saving you time while capturing key points.
+      </p>
+    </details>
+
+    <details className="bg-white/10 rounded p-4 cursor-pointer hover:bg-white/20">
+      <summary className="font-bold">Can I summarize multiple YouTube videos at once?</summary>
+      <p className="mt-2 text-sm">
+        Currently, the Summarizer works on one video at a time. Future updates may include batch summarization.
+      </p>
+    </details>
+
+    <details className="bg-white/10 rounded p-4 cursor-pointer hover:bg-white/20">
+      <summary className="font-bold">Is there a limit on video length or number of summaries?</summary>
+      <p className="mt-2 text-sm">
+        There are no strict limits, but extremely long videos may take longer to summarize. Batch summarization is limited to 20 videos at a time.
+      </p>
+    </details>
+
+    <details className="bg-white/10 rounded p-4 cursor-pointer hover:bg-white/20">
+      <summary className="font-bold">Can I customize the summary length or prompt?</summary>
+      <p className="mt-2 text-sm">
+        Yes! You can adjust the summary length or provide custom prompts to get summaries tailored to your needs.
+      </p>
+    </details>
+
+    <details className="bg-white/10 rounded p-4 cursor-pointer hover:bg-white/20">
+      <summary className="font-bold">How accurate are the summaries?</summary>
+      <p className="mt-2 text-sm">
+        Summaries are context-aware and concise, though accuracy depends on video clarity and complexity.
+      </p>
+    </details>
+
+    <details className="bg-white/10 rounded p-4 cursor-pointer hover:bg-white/20">
+      <summary className="font-bold">Is my data secure when using Summarizer?</summary>
+      <p className="mt-2 text-sm">
+        Yes. Your data is handled securely, and videos are only processed for summarization.
+      </p>
+    </details>
+
+    <details className="bg-white/10 rounded p-4 cursor-pointer hover:bg-white/20">
+      <summary className="font-bold">Can I use this to summarize other content?</summary>
+      <p className="mt-2 text-sm">
+        Currently, Summarizer is optimized for YouTube videos, but support for other content types may be added in the future.
+      </p>
+    </details>
+
+    <details className="bg-white/10 rounded p-4 cursor-pointer hover:bg-white/20">
+      <summary className="font-bold">What kinds of videos can I summarize?</summary>
+      <p className="mt-2 text-sm">
+        Educational videos, lectures, tutorials, webinars, interviews, podcasts—any video with spoken content.
+      </p>
+    </details>
+
+    <details className="bg-white/10 rounded p-4 cursor-pointer hover:bg-white/20">
+      <summary className="font-bold">Will there be support for other languages?</summary>
+      <p className="mt-2 text-sm">
+        Currently, Summarizer supports over 40 languages. More languages may be added in future updates.
+      </p>
+    </details>
   </div>
 </section>
                   
