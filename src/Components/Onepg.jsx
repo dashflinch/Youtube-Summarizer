@@ -134,82 +134,71 @@ const Onepg = () => {
             </section>
 
             {/* FAQ Section */}
-            <section className="mt-12 p-6 bg-black/30 rounded text-white">
-                <h2 className="text-xl font-comforta font-bold mb-6 text-center">
-                    Frequently Asked Questions
-                </h2>
+ <section className="mt-12 p-6 bg-black/30 rounded text-white">
+  <h2 className="text-xl font-comforta font-bold mb-6 text-center">
+    Frequently Asked Questions
+  </h2>
 
-                <div className="max-w-3xl font-plex mx-auto space-y-2">
-                    {[
-                        {
-                            q: "What is the YouTube Video Summarizer?",
-                            a: "The YouTube Video Summarizer converts long YouTube videos into concise summaries, saving you time while capturing key points.",
-                        },
-                        {
-                            q: "Can I summarize multiple YouTube videos at once?",
-                            a: "Currently, the Summarizer works on one video at a time. Future updates may include batch summarization.",
-                        },
-                        {
-                            q: "Is there a limit on video length or number of summaries?",
-                            a: "There are no strict limits, but extremely long videos may take longer to summarize. Batch summarization is limited to 20 videos at a time.",
-                        },
-                        {
-                            q: "Can I customize the summary length or prompt?",
-                            a: "Yes! You can adjust the summary length or provide custom prompts to get summaries tailored to your needs.",
-                        },
-                        {
-                            q: "How accurate are the summaries?",
-                            a: "Summaries are context-aware and concise, though accuracy depends on video clarity and complexity.",
-                        },
-                        {
-                            q: "Is my data secure when using Summarizer?",
-                            a: "Yes. Your data is handled securely, and videos are only processed for summarization.",
-                        },
-                        {
-                            q: "Can I use this to summarize other content?",
-                            a: "Currently, Summarizer is optimized for YouTube videos, but support for other content types may be added in the future.",
-                        },
-                        {
-                            q: "What kinds of videos can I summarize?",
-                            a: "Educational videos, lectures, tutorials, webinars, interviews, podcasts—any video with spoken content.",
-                        },
-                        {
-                            q: "Will there be support for other languages?",
-                            a: "Currently, Summarizer supports over 40 languages. More languages may be added in future updates.",
-                        },
-                    ].map((faq, index) => (
-                        <div
-                            key={index}
-                            className="bg-white/10 rounded cursor-pointer hover:bg-white/20 transition"
-                        >
-                            <div
-                                className="flex justify-between items-center p-4"
-                                onClick={() =>
-                                    setOpenFAQ(openFAQ === index ? null : index)
-                                }
-                            >
-                                <h3 className="font-bold">{faq.q}</h3>
-                                <span
-                                    className={`transform transition-transform duration-300 ${openFAQ === index ? "rotate-180" : "rotate-0"
-                                        }`}
-                                >
-                                    ▼
-                                </span>
-                            </div>
-                            {/* Answer with smooth drop-down */}
-                            <div
-                                className={openFAQ === index ? "block" : "hidden"}>
-                            >
-                                <p className="p-4 pt-0 text-sm">{faq.a}</p>
-                            </div>
-                        </div>
-                    ))}
-                </div>
-            </section>
-
-
-
-            {/* Footer */}
+  <div className="max-w-3xl font-plex mx-auto space-y-2">
+    {[
+      {
+        q: "What is the YouTube Video Summarizer?",
+        a: "The YouTube Video Summarizer converts long YouTube videos into concise summaries, saving you time while capturing key points.",
+      },
+      {
+        q: "Can I summarize multiple YouTube videos at once?",
+        a: "Currently, the Summarizer works on one video at a time. Future updates may include batch summarization.",
+      },
+      {
+        q: "Is there a limit on video length or number of summaries?",
+        a: "There are no strict limits, but extremely long videos may take longer to summarize. Batch summarization is limited to 20 videos at a time.",
+      },
+      {
+        q: "Can I customize the summary length or prompt?",
+        a: "Yes! You can adjust the summary length or provide custom prompts to get summaries tailored to your needs.",
+      },
+      {
+        q: "How accurate are the summaries?",
+        a: "Summaries are context-aware and concise, though accuracy depends on video clarity and complexity.",
+      },
+      {
+        q: "Is my data secure when using Summarizer?",
+        a: "Yes. Your data is handled securely, and videos are only processed for summarization.",
+      },
+      {
+        q: "Can I use this to summarize other content?",
+        a: "Currently, Summarizer is optimized for YouTube videos, but support for other content types may be added in the future.",
+      },
+      {
+        q: "What kinds of videos can I summarize?",
+        a: "Educational videos, lectures, tutorials, webinars, interviews, podcasts—any video with spoken content.",
+      },
+      {
+        q: "Will there be support for other languages?",
+        a: "Currently, Summarizer supports over 40 languages. More languages may be added in future updates.",
+      },
+    ].map((faq, index) => (
+      <div
+        key={index}
+        className="bg-white/10 rounded cursor-pointer hover:bg-white/20 transition"
+      >
+        <div
+          className="flex justify-between items-center p-4"
+          onClick={() => setOpenFAQ(openFAQ === index ? null : index)}
+        >
+          <h3 className="font-bold">{faq.q}</h3>
+          <span>{openFAQ === index ? "▲" : "▼"}</span>
+        </div>
+        {/* Simple show/hide */}
+        <div className={openFAQ === index ? "block p-4 pt-0 text-sm" : "hidden"}>
+          {faq.a}
+        </div>
+      </div>
+    ))}
+  </div>
+</section>
+                  
+        {/* Footer */}
             <footer className="mt-auto bg-black text-white text-center py-6  rounded">
                 <p>&copy; 2025 YouTube Summarizer. All rights reserved.</p>
                 <div className="flex justify-center gap-4 mt-2">
