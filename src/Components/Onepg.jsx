@@ -198,10 +198,7 @@ const Onepg = () => {
                             </div>
                             {/* Answer with smooth drop-down */}
                             <div
-                                className={`overflow-hidden transition-all duration-500 ease-in-out`}
-                                style={{
-                                    maxHeight: openFAQ === index ? "500px" : "0px",
-                                }}
+                                className={`transition-all duration-300 ease-in-out ${openFAQ === index ? "max-h-96 opacity-100" : "max-h-0 opacity-0 overflow-hidden`}
                             >
                                 <p className="p-4 pt-0 text-sm">{faq.a}</p>
                             </div>
