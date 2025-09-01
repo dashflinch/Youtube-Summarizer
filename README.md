@@ -37,4 +37,4 @@ youtube-summarizer/
 ├── package.json
 └── vite.config.js
 
-## 🌐 Live Demo : 
+## 🌐 Live Demo : https://youtube-summarizer-bay.vercel.app/
