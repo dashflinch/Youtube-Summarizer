@@ -1,0 +1,10 @@
+.onepg-bg {
+    background-image: url("../assets/tube.jpg");
+    background-size: cover;
+}
+
+@media (min-width: 768px) {
+    .onepg-bg {
+        background-image: url("../assets/youtube.jpg");
+    }
+}

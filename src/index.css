@@ -1,0 +1,31 @@
+@import "tailwindcss";
+@tailwind utilities;
+
+@font-face {
+    font-family: Comforta;
+    src: url('/Comfortaa-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: Plex;
+    src: url('/IBMPlexMono-Medium.ttf') format('truetype');
+}
+
+.font-comforta {
+    font-family: 'Comforta', sans-serif;
+}
+
+.font-plex {
+    font-family: 'Plex', monospace;
+}
+
+
+
+html,
+body,
+#root {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
